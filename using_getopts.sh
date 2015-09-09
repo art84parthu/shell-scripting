@@ -1,4 +1,14 @@
 #!/bin/bash
+
+# This script will make use of getopts feature for enabling options and arguments for the shell script. 
+# The example here shows 2 options which takes arguments and one option which does not and also
+# demonstrates how to show help text for running the script
+# Additionally, this script performs data validation to ensure that all arguments are passed 
+# when invoking the script. The assumption here is that all arguments are mandatory! You can of course 
+# modify this part to suit your needs! 
+
+
+
 usage="$(basename "$0") [-h] [-r OPTION_DESC] [-c ANOTHER_OPTION] [-d YET_ANOTHER_OPTION] -- program to do whatever!
 
 where:
